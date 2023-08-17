@@ -1,12 +1,12 @@
-header{
-   background-image: url(../images/Group\ 36771.png);
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 267px;
-   max-width: 100%;
+.header-container{
+    background-image: url(../images/Group\ 36771.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 267px;
+    max-width: 100%;
 }
-.container{
-   
+.containers{
+    display: block;
 }
 .logo{
     display:flex;
@@ -31,12 +31,12 @@ li img{
 }
 .letter h2{
     color: #FFF;
-text-align: center;
-font-family: SF Pro Display;
-font-size: 15px;
-font-weight: 500;
-line-height:10px; /* 450% */
-text-transform: uppercase;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 15px;
+    font-weight: 500;
+    line-height:10px; /* 450% */
+    text-transform: uppercase;
 }
 .letter h1{
     color: #FFF;
@@ -52,17 +52,14 @@ text-transform: uppercase;
     height: 41px; 
     margin-left:200px;
     margin-bottom: -30px;
-    
 }
 .img p{
     color: var(--neutral-white, #FFF);
-font-family: SF Pro Display;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-
-
+    font-family: SF Pro Display;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .logo2{
     display: flex;
@@ -75,13 +72,28 @@ line-height: normal;
 .logo-right{
    margin: 0px 25px 30px 55px ;
 }
+.container-nav{
+    
+}
+.mobile-menu-btn{
+    /* display: none; */
+    margin-top: 12px;
+    float: right;
+}
 .menu{
     display: flex;
     justify-content:center;
     margin-top: -60px;
-    
-    
+    height: 60px;
+    overflow: hidden;
 
+}
+.menu li{
+    padding: 15px 24px;
+    list-style-type: none;
+}
+.mobile-menu-btn{
+    display: none;
 }
 .my-auto{
     
@@ -89,14 +101,13 @@ line-height: normal;
 }
 .button p{
     color: #1E2539;
-
-font-family: SF Pro Display;
-font-size: 18px;
-font-style: italic;
-font-weight: 900;
-text-transform: uppercase;
-text-align: left;
-justify-content: left;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: left;
+    justify-content: left;
     margin:2px 0px 0px 0px;
 }
 .button img{
@@ -104,11 +115,11 @@ justify-content: left;
 }
 .button{
     width: 233px;
-height: 45px;
-border-radius: 24px;
-padding: 6px 12px;
-background: #FFB72D;
-margin-top:55px;
+    height: 45px;
+    border-radius: 24px;
+    padding: 6px 12px;
+    background: #FFB72D;
+    margin-top:55px;
     display: flex;
 }
 
@@ -121,8 +132,6 @@ margin-top:55px;
 }
 
 .border-menu {
-
-   
     text-decoration: none;
     border-radius: 24px;
     background: #10003F;
@@ -139,14 +148,38 @@ margin-top:55px;
     width: 1060px;
 }
 .section-main{
-    width: 914px;
-    height: 1000px;
+    display: block;
+    width: 1000px;
     flex-shrink: 0;
     border-radius: 24px;
     background: var(--neutral-light-bg, #F6F7FB);
-    margin-top:50px;
-    margin-left: 200px;
+    margin: 50px auto 0 auto;
 
+}
+.contaner1{
+    display: block;
+}
+.logo-right2{
+    display: none;
+}
+
+.contaner2{
+    display: block;
+}
+.content1{
+    /* display: block; */
+}
+.container-nav-hid{
+    display: none;
+}
+.show-img{
+    display: block;
+}
+.text{
+    display: none;
+}
+.main-content{
+    display: block;
 }
 .col{
     display: flex;
@@ -309,13 +342,13 @@ margin-top:55px;
     border-radius: 8px;
     background: linear-gradient(225deg, #FAD961 0%, #F76B1C 100%);
 }
-footer{
+
+/* -----footer----- */
+.footer{
+    display: block;
     width:100%;
     height: 117px;
-}
-.footer{
-    display:flex;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 .footer-left{
     color: #1E2539;
@@ -340,6 +373,7 @@ footer{
 .footer-right img{
     width: 57px;
     height: 57px;
+    max-width: 100%;
 }
 .footer-right p{
     color: #1E2539;
